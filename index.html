@@ -1,169 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>CSS Template</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+* {
+  box-sizing: border-box;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+/* Style the header */
+header {
+  background-color: #ffccff;
+  padding: 30px;
   text-align: center;
+  font-size: 35px;
+  font-family: fantasy;
+  color: #330033;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background:  #ffccff;
+  padding: 20px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #ffe6ff;
+  padding: 10px;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+/* Style the footer */
+footer {
+  background-color: #1a001a;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
 </style>
 </head>
 <body>
 
-<div class="slideshow-container">
+<header>
+  <h2>Sweeties and Cake's </h2>
+</header>
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="resim1.jpg" style=width:"900", height:"600">
-  <div class="text">Caption Text</div>
-</div>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Wedding Cakes</a></li>
+      <li><a href="#">Birthdaycakes</a></li>
+      <li><a href="#">3D Cakes</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Wedding Cakes</h1>
+    <p>
+      You have 3 options of Flavour:
+      <ul>
+        <li>Strawbery </li>
+        <li>Chocolate </li>
+        <li>Vanilla</li>
+      </ul>
+      You can order only 3 size of your special cake:
+      <ul>
+        <li>For 4-6 people </li>
+        <li>For 6-8 people </li>
+        <li>For 8-10 people</li>
+      </ul>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="resim2.jpg" style=width:"900", height:"600">
-  <div class="text">Caption Two</div>
-</div>
+      Please call us to other private requests:0548354687 
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="resim3.jpg" style=width:"900", height:"600">
-  <div class="text">Caption Three</div>
-</div>
+    </p>
+    <p>Basic Ingredients: Sugar, wheatflour, starch, egg, bakingpowder, milk, butter, sour cream, chocolate. </p>
+    <strong> Attention!!</strong> Our products include egg and glutein proteins.
+  </article>
+</section>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+<footer>
+  
+   <p style= "text-align: left;">Sweeties and Cake's Companies Adress: Church Street 89 post code:12354 Mannheim/ Baden-württenberg</p>
+    <p style= "text-align:center;">Please follow us ;
+      <ul>
+       <li> Instagram:SwettiesandCakes</li>
+       <li>Facebook:SwettiesandCakes</li></ul> </p>
+</footer>
 
 </body>
-</html> 
+</html>
+
