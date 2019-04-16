@@ -1,17 +1,10 @@
-* anasayfaresmi{
-  height: 300px;
-  width:10000px;
-  background-color:#b35900;
-}
-
-/* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
-/* Style the buttons that are used to open the tab content */
+/* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
   float: left;
@@ -20,6 +13,7 @@
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
