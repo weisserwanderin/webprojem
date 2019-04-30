@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>Cake’s Sweet</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<body bgcolor="#F5AD9D  ">
+<div class="anasayfa" >
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    
+    <h2>Cake’s Sweet</h2>
+   
+       <div class="w3-right w3-hide-small" style="background-color:#EC6F55">
+      <a href="products.html" class="w3-bar-item w3-button">About</a>
+      <a href="index.html" class="w3-bar-item w3-button">Snacs</a>
+      <a href="cakes.html" class="w3-bar-item w3-button">Cakes</a>
+      <a href="trainer.html" class="w3-bar-item w3-button">Trainer</a>
+      <a href="about.html" class="w3-bar-item w3-button">Contact</a>
+      
+    </div>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:1100px" align="center">
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Wedding Cakes')">Wedding Cakes</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Birthday Cakes')">Birthday cakes</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('3D Cakes')">3D Cakes</button>
+</div>
+
+<div id="Wedding Cakes" class="w3-container city" >
+  <h2>Wedding Cakes</h2>
+ <img class="w3-image" src="wedding.jpg" alt="Sweet Life" width="200" height="200" align="center">
+  <p>
+      You have 3 options of Flavour:
+      <ul>
+        <li>Strawbery </li>
+        <li>Chocolate </li>
+        <li>Vanilla</li>
+      </ul>
+      You can order only 3 size of your special cake:
+      <ul>
+        <li>For 4-6 people </li>
+        <li>For 6-8 people </li>
+        <li>For 8-10 people</li>
+      </ul>
+
+      Please call us to other private requests:0548354687 
+
+    </p>
+    <p>Basic Ingredients: Sugar, wheatflour, starch, egg, bakingpowder, milk, butter, sour cream, chocolate. </p>
+    <strong> Attention!!</strong> Our products include egg and glutein proteins.
+  
+</div>
+<div id="Birthday Cakes" class="w3-container city" style="display:none">
+  <h2>Birthday Cakes</h2>
+<img class="w3-image" src="ucboyut.jpg" alt="Snacs" width="200" height="200" align="center"><br>
+  <p>
+      You have 3 options of Flavour:
+      <ul>
+        <li>Strawbery </li>
+        <li>Chocolate </li>
+        <li>Vanilla</li>
+      </ul>
+      You can order only 3 size of your special cake:
+      <ul>
+        <li>For 4-6 people </li>
+        <li>For 6-8 people </li>
+        <li>For 8-10 people</li>
+      </ul>
+
+      Please call us to other private requests:0548354687 
+  </div>
+  
+<div id="3D Cakes" class="w3-container city" style="display:none">
+  <h2>3D Cakes</h2>
+<img class="w3-image" src="ucboyut.jpg" alt="Snacs" width="200" height="200" align="center"><br>
+  <p>
+      You have 3 options of Flavour:
+      <ul>
+        <li>Strawbery </li>
+        <li>Chocolate </li>
+        <li>Vanilla</li>
+      </ul>
+      You can order only 3 size of your special cake:
+      <ul>
+        <li>For 4-6 people </li>
+        <li>For 6-8 people </li>
+        <li>For 8-10 people</li>
+      </ul>
+
+      Please call us to other private requests:0548354687 
+  </div>
+
+
+ <hr>
+ <footer  class="w3-center w3-padding-32" style="background-color:#D95539 " >
+  <p> Cake's Sweet GmBh Apfel Strasse 9, PC: 18666 Berlin Germany Please get in touch with us for private requests and questions:0548354687 </p>
+</footer>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
